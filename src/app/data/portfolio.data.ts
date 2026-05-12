@@ -5,7 +5,7 @@ export const PORTFOLIO_DATA = {
       title: 'Kacper Renkel',
       subtitle: 'Inżynier Oprogramowania & Full Stack Developer',
       description:
-        'Posiadam tytuł inżyniera informatyki i ponad dwuletnie komercyjne doświadczenie. Specjalizuję się w tworzeniu nowoczesnych aplikacji webowych w oparciu o ekosystem Angular oraz Node.js/Java. Skupiam się na czystej architekturze, optymalizacji renderowania oraz dostarczaniu skalowalnych rozwiązań.',
+        'Posiadam tytuł inżyniera informatyki i ponad dwuletnie komercyjne doświadczenie. Specjalizuję się w tworzeniu nowoczesnych aplikacji webowych w oparciu o ekosystem Angular oraz Node.js/Java.',
     },
     education: {
       title: 'Edukacja',
@@ -25,7 +25,18 @@ export const PORTFOLIO_DATA = {
           company: 'Wama Soft',
           period: '07.2024 - Obecnie',
           summary: 'Projektowanie i rozwój systemów medycznych, parkingowych.',
-          details: [],
+          details: [
+            'Integracja z tablicami parkingowymi, konfigurowanie oraz wyświetlanie zawartości na nich przez aplikację WEB',
+            'Aplikacja moblina (React Native) służąca do wyświetlania parametrów życiowych pacjentów',
+            'Aplikacja mobilna służąca do uzupełniania karty gorączkowej oraz integracji z tacą lekową',
+            'Napisanie api dla tacy lekowej, podświetlanie kubeczków (Arduino)',
+            'Integracje z systemami parkingowymi, medycznymi oraz zliczającymi wejścia',
+            'Tworzenie mikroserwisów dla serwisów backendowych',
+            'Deploy aplikacji za pomocą Apache lub Nginx',
+            'Tworzenie aplikacji backendowych dla systemów medycznych oraz parkingowych opartych na Nest oraz Express',
+            'Tworzenie aplikacji frontendowych opartych na Angular, React oraz EJS',
+            'Konteneryzacja stworzonych aplikacji',
+          ],
           tech: [
             'Angular',
             'TypeScript',
@@ -46,7 +57,10 @@ export const PORTFOLIO_DATA = {
           period: '07.2023 - 09.2023',
           summary:
             'Projektowanie i rozwój rozbudowanego systemu spedytowego używanego na potrzeby firmy',
-          details: [],
+          details: [
+            'Tworzenie oprogramowania spedytowego w .NET',
+            'Pisanie aplikacji frontendowej w Angular',
+          ],
           tech: ['Angular', 'TypeScript', 'MySQL', 'C#', '.NET'],
         },
       ],
@@ -76,6 +90,31 @@ export const PORTFOLIO_DATA = {
           repoUrl: 'https://github.com/kacper0276/Praca_Inzynierska_Plemiona',
           liveUrl: null,
         },
+        {
+          name: 'Aplikacja która pomaga utrzymać postanowienia',
+          description:
+            'Aplikacja, tworząca drzewa która pozwala trwać w postanowieniach.',
+          tech: ['React', 'Nest.JS', 'MySQL', 'SCSS'],
+          repoUrl: 'https://github.com/kacper0276/NazwaZespolu_IO_800_pi',
+          liveUrl: null,
+        },
+        {
+          name: 'Aplikacja służąca do rezerwacji pokoju hotelowego',
+          description:
+            'Aplikacja służąca do rezerwacji pokoju hotelowego wykonana w React oraz Spring.',
+          tech: ['React', 'Spring', 'MySQL', 'SCSS'],
+          repoUrl:
+            'https://github.com/kacper0276/Project_PSI_Hotel_Management_System-React-Spring',
+          liveUrl: null,
+        },
+        {
+          name: 'Zadania programistyczne',
+          description:
+            'Różne zadania programistyczne ze stron SPOJ, Szkopuł, Codewars.',
+          tech: ['JavaScript', 'Java', 'C++', 'Python', 'C#'],
+          repoUrl: 'https://github.com/kacper0276/Programming_Challenges',
+          liveUrl: null,
+        },
       ],
     },
     stack: { title: 'Stack Technologiczny' },
@@ -86,7 +125,7 @@ export const PORTFOLIO_DATA = {
       title: 'Kacper Renkel',
       subtitle: 'Software Engineer & Full Stack Developer',
       description:
-        'I hold a Computer Science Engineering degree and over two years of commercial experience. I specialize in building modern web applications based on the Angular ecosystem and Node.js/Java. I focus on clean architecture, rendering optimization, and delivering scalable solutions.',
+        'I hold a Bachelor of Engineering degree in Computer Science and have over two years of commercial experience. I specialize in building modern web applications based on the Angular ecosystem and Node.js/Java.',
     },
     education: {
       title: 'Education',
@@ -95,7 +134,7 @@ export const PORTFOLIO_DATA = {
           degree:
             'Bachelor of Engineering in Computer Science (Final grade: 5)',
           school: 'University of Warmia and Mazury in Olsztyn',
-          period: '2022 - 20246',
+          period: '2022 - 2026',
         },
       ],
     },
@@ -103,18 +142,47 @@ export const PORTFOLIO_DATA = {
       title: 'Professional Experience',
       items: [
         {
-          role: 'Full Stack Developer (Angular)',
-          company: 'Software House',
-          period: '2022 - Present',
-          summary: 'Designing and developing a complex ERP system.',
+          role: 'Full Stack Developer',
+          company: 'Wama Soft',
+          period: '07.2024 - Present',
+          summary: 'Designing and developing medical and parking systems.',
           details: [
-            'Building performant interfaces in Angular 15+ using Standalone Components.',
-            'Managing complex application state using RxJS.',
-            'Integrating with REST APIs and building endpoints in Node.js (NestJS).',
-            'Optimizing SQL queries and designing PostgreSQL database structures.',
-            'Conducting code reviews and maintaining code quality within the team.',
+            'Integrating with parking display boards, configuring and displaying content via a web application.',
+            "Developing a mobile app (React Native) for displaying patients' vital signs.",
+            'Creating a mobile app for filling out fever charts and integrating it with a smart medication tray.',
+            'Writing an API for the medication tray, including LED illumination of medicine cups (Arduino).',
+            'Integrating with parking, medical, and entry-counting systems.',
+            'Creating microservices for backend systems.',
+            'Deploying applications using Apache or Nginx.',
+            'Building backend applications for medical and parking systems based on NestJS and Express.',
+            'Developing frontend applications using Angular, React, and EJS.',
+            'Containerizing the developed applications.',
           ],
-          tech: ['Angular', 'TypeScript', 'RxJS', 'NestJS', 'PostgreSQL'],
+          tech: [
+            'Angular',
+            'TypeScript',
+            'RxJS',
+            'NestJS',
+            'MySQL',
+            'Express',
+            'React',
+            'React Native',
+            'Docker',
+            'Linux',
+            'Arduino',
+          ],
+        },
+        {
+          role: 'Full Stack Developer',
+          company: 'WOK sp. z o.o.',
+          period: '07.2023 - 09.2023',
+          summary:
+            'Designing and developing an extensive freight forwarding system for internal company use.',
+          details: [
+            'Developing forwarding software using .NET.',
+            'Building the frontend application in Angular.',
+          ],
+          tech: ['Angular', 'TypeScript', 'MySQL', 'C#', '.NET'],
         },
       ],
     },
@@ -122,19 +190,51 @@ export const PORTFOLIO_DATA = {
       title: 'Featured Projects',
       items: [
         {
-          name: 'Warehouse Management System',
+          name: 'Technical High School Website',
           description:
-            'Custom application for real-time inventory tracking with an analytical dashboard.',
-          tech: ['Angular', 'NgRx', 'Node.js', 'Socket.io'],
-          repoUrl: '#',
-          liveUrl: '#',
+            'Custom technical high school website with a bespoke CMS.',
+          tech: ['React', 'MySQL', 'Node.js', 'Express'],
+          repoUrl: 'https://github.com/kacper0276/School_Page-React-Node.JS',
+          liveUrl: 'https://ckziubrodnica.pl',
         },
         {
-          name: 'E-commerce Dashboard',
+          name: 'Tribal Wars Inspired Game',
+          description: 'Web-based game inspired by the Tribal Wars series.',
+          tech: [
+            'Angular',
+            'Socket.io',
+            'Nest.JS',
+            'MySQL',
+            'SCSS',
+            'Docker',
+            'Nginx',
+          ],
+          repoUrl: 'https://github.com/kacper0276/Praca_Inzynierska_Plemiona',
+          liveUrl: null,
+        },
+        {
+          name: 'Habit & Resolution Tracker',
           description:
-            'Responsive admin panel for online stores with third-party payment API integrations.',
-          tech: ['Angular', 'Tailwind', 'Spring Boot', 'MySQL'],
-          repoUrl: '#',
+            'An application that generates virtual trees to help users stick to their resolutions and habits.',
+          tech: ['React', 'Nest.JS', 'MySQL', 'SCSS'],
+          repoUrl: 'https://github.com/kacper0276/NazwaZespolu_IO_800_pi',
+          liveUrl: null,
+        },
+        {
+          name: 'Hotel Room Booking App',
+          description:
+            'A hotel room reservation application built with React and Spring Boot.',
+          tech: ['React', 'Spring', 'MySQL', 'SCSS'],
+          repoUrl:
+            'https://github.com/kacper0276/Project_PSI_Hotel_Management_System-React-Spring',
+          liveUrl: null,
+        },
+        {
+          name: 'Programming Challenges',
+          description:
+            'Various programming challenges from platforms like SPOJ, Szkopuł, and Codewars.',
+          tech: ['JavaScript', 'Java', 'C++', 'Python', 'C#'],
+          repoUrl: 'https://github.com/kacper0276/Programming_Challenges',
           liveUrl: null,
         },
       ],
@@ -149,10 +249,10 @@ export const STACK_CATEGORIES = [
     label: { pl: 'Główne Technologie', en: 'Core Technologies' },
     type: 'core',
     items: [
-      { name: 'TypeScript', level: 85 },
-      { name: 'Java', level: 60 },
-      { name: 'C', level: 40 },
-      { name: 'RxJS', level: 60 },
+      { name: 'TypeScript', level: 85, color: '#3178C6' },
+      { name: 'Java', level: 60, color: '#ED8B00' },
+      { name: 'C', level: 40, color: '#00599C' },
+      { name: 'RxJS', level: 60, color: '#B7178C' },
     ],
   },
   {
@@ -160,12 +260,12 @@ export const STACK_CATEGORIES = [
     label: { pl: 'Frontend', en: 'Frontend' },
     type: 'front',
     items: [
-      { name: 'JavaScript', level: 85 },
-      { name: 'SCSS / CSS', level: 80 },
-      { name: 'HTML5', level: 90 },
-      { name: 'Angular', level: 90 },
-      { name: 'React', level: 60 },
-      { name: 'React Native', level: 50 },
+      { name: 'JavaScript', level: 85, color: '#F7DF1E' },
+      { name: 'SCSS / CSS', level: 80, color: '#CC6699' },
+      { name: 'HTML5', level: 90, color: '#E34F26' },
+      { name: 'Angular', level: 90, color: '#DD0031' },
+      { name: 'React', level: 60, color: '#61DAFB' },
+      { name: 'React Native', level: 50, color: '#61DAFB' },
     ],
   },
   {
@@ -173,10 +273,14 @@ export const STACK_CATEGORIES = [
     label: { pl: 'Backend & Bazy danych', en: 'Backend & Data' },
     type: 'back',
     items: [
-      { name: 'Node.js', level: 70 },
-      { name: 'NestJS', level: 80 },
-      { name: 'PostgreSQL', level: 70 },
-      { name: 'Spring Boot', level: 30 },
+      { name: 'Node.js', level: 70, color: '#339933' },
+      { name: 'NestJS', level: 80, color: '#EA2845' },
+      { name: 'Spring Boot', level: 30, color: '#6DB33F' },
+      { name: 'Express', level: 70, color: '#000000' },
+      { name: 'PostgreSQL', level: 70, color: '#336791' },
+      { name: 'MySQL', level: 70, color: '#4479A1' },
+      { name: 'Mongo', level: 70, color: '#47A248' },
+      { name: 'SQLite', level: 70, color: '#003B57' },
     ],
   },
   {
@@ -184,8 +288,11 @@ export const STACK_CATEGORIES = [
     label: { pl: 'Narzędzia & DevOps', en: 'Tools & DevOps' },
     type: 'tools',
     items: [
-      { name: 'Git', level: 85 },
-      { name: 'Docker', level: 60 },
+      { name: 'Git', level: 85, color: '#F05032' },
+      { name: 'Docker', level: 60, color: '#2496ED' },
+      { name: 'Nginx', level: 60, color: '#009639' },
+      { name: 'Arduino', level: 50, color: '#00979D' },
+      { name: 'Apache', level: 60, color: '#D22128' },
     ],
   },
 ];

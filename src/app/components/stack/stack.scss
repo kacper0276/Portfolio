@@ -59,22 +59,6 @@
 
   --item-color: var(--text-secondary);
 
-  &.core {
-    --item-color: var(--accent-angular);
-  }
-  &.front {
-    --item-color: #38bdf8;
-  }
-  &.back {
-    --item-color: #22c55e;
-  }
-  &.data {
-    --item-color: #f59e0b;
-  }
-  &.tools {
-    --item-color: #f43f5e;
-  }
-
   .item-header {
     display: flex;
     justify-content: space-between;

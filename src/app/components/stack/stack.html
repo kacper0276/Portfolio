@@ -11,7 +11,7 @@
         <div
           class="stack-item"
           *ngFor="let item of category.items; let i = index"
-          [ngClass]="category.type"
+          [style.--item-color]="item.color"
           [style.animation-delay]="i * 0.1 + 's'"
         >
           <div class="item-header">
