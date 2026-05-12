@@ -1,0 +1,116 @@
+// Breakpointy
+$bp-md: 992px;
+$bp-sm: 600px;
+
+.app-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  min-height: 100vh;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Motywy oparte na zmiennych CSS (zostawiamy natywne zmienne, bo zmieniają się dynamicznie w przeglądarce)
+  &.dark {
+    --bg-main: #0b1120;
+    --bg-card: #141c2f;
+    --bg-card-hover: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #38bdf8;
+    --accent-angular: #e3002f;
+    --border: rgba(255, 255, 255, 0.08);
+    --shadow: rgba(0, 0, 0, 0.3);
+    --glow: rgba(56, 189, 248, 0.08);
+  }
+
+  &.light {
+    --bg-main: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent: #0ea5e9;
+    --accent-angular: #dd0031;
+    --border: #e2e8f0;
+    --shadow: rgba(15, 23, 42, 0.06);
+    --glow: rgba(14, 165, 233, 0.05);
+  }
+
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: var(--accent);
+    color: #ffffff;
+  }
+
+  // Zagnieżdżone elementy wewnątrz .app-wrapper
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (max-width: $bp-md) {
+      padding: 3rem 1.5rem;
+      gap: 2rem;
+    }
+
+    @media (max-width: $bp-sm) {
+      padding: 2rem 1rem;
+    }
+  }
+
+  .main-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+
+    @media (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: $bp-sm) {
+      gap: 1.5rem;
+    }
+  }
+
+  app-stack,
+  app-education {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .left-col,
+  .right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (max-width: $bp-sm) {
+      gap: 1.5rem;
+    }
+  }
+
+  .bottom-layout,
+  .top-layout {
+    margin-top: 1rem;
+    padding-top: 3rem;
+    border-top: 1px dashed var(--border);
+  }
+}

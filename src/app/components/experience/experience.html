@@ -1,0 +1,53 @@
+<section class="card-section">
+  <h3>{{ state.currentData.experience.title }}</h3>
+  <div class="timeline">
+    <div
+      class="timeline-item"
+      *ngFor="let item of state.currentData.experience.items; let i = index"
+      [class.active]="expandedRows[i]"
+      (click)="toggleRow(i)"
+    >
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="header">
+          <div>
+            <h4>{{ item.role }}</h4>
+            <span class="company">{{ item.company }}</span>
+          </div>
+          <div class="header-right">
+            <span class="period">{{ item.period }}</span>
+            <svg
+              class="chevron"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <p class="summary">{{ item.summary }}</p>
+
+        <div class="details-wrapper">
+          <div class="details-inner">
+            <ul class="task-list">
+              <li *ngFor="let task of item.details">
+                <span class="bullet">▹</span> {{ task }}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span *ngFor="let tech of item.tech">{{ tech }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

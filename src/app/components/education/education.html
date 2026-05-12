@@ -1,0 +1,10 @@
+<section class="card-section">
+  <h3>{{ state.currentData.education.title }}</h3>
+  <div class="edu-item" *ngFor="let item of state.currentData.education.items">
+    <div class="edu-details">
+      <h4>{{ item.degree }}</h4>
+      <span class="school">{{ item.school }}</span>
+      <span class="period">{{ item.period }}</span>
+    </div>
+  </div>
+</section>

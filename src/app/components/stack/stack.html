@@ -1,0 +1,32 @@
+<section class="card-section stack-container">
+  <h3>{{ state.currentData.stack.title }}</h3>
+
+  <div class="stack-groups">
+    <div class="stack-category" *ngFor="let category of state.stackCategories">
+      <h4 class="category-title">
+        {{ state.currentLang === "pl" ? category.label.pl : category.label.en }}
+      </h4>
+
+      <div class="stack-grid">
+        <div
+          class="stack-item"
+          *ngFor="let item of category.items; let i = index"
+          [ngClass]="category.type"
+          [style.animation-delay]="i * 0.1 + 's'"
+        >
+          <div class="item-header">
+            <div class="item-name">
+              <span class="dot"></span>
+              {{ item.name }}
+            </div>
+            <span class="level-text">{{ item.level }}%</span>
+          </div>
+
+          <div class="level-bar-container">
+            <div class="level-bar-fill" [style.width.%]="item.level"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

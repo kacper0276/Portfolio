@@ -1,0 +1,23 @@
+<header class="header-section">
+  <nav class="controls">
+    <button (click)="state.toggleTheme()" class="btn-icon">
+      {{
+        state.currentTheme === "light"
+          ? state.currentData.nav.dark
+          : state.currentData.nav.light
+      }}
+    </button>
+    <button (click)="state.toggleLang()" class="btn-primary">
+      {{ state.currentData.nav.lang }}
+    </button>
+  </nav>
+
+  <div class="hero-content">
+    <div class="title-wrapper">
+      <h1>{{ state.currentData.about.title }}</h1>
+      <span class="focus-badge">TypeScript Focus</span>
+    </div>
+    <h2>{{ state.currentData.about.subtitle }}</h2>
+    <p>{{ state.currentData.about.description }}</p>
+  </div>
+</header>
